@@ -15,8 +15,11 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  color: white;
 }
 
  .portfolio-item {
   margin-bottom: 30px;
 }
+ 
+
