@@ -85,7 +85,7 @@
 
   <!-- Page Content -->
   <div class="container">
-
+<div><br></br></div>
     <!-- Page Heading/Breadcrumbs -->
     <h1 class="mt-4 mb-3">Contact
       <!-- <small>Subheading</small> -->
@@ -120,13 +120,13 @@
       </div>
     </div>
     <!-- /.row -->
-
+    <?php include 'contact_me.php';?>
     <!-- Contact Form -->
     <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
     <div class="row">
       <div class="col-lg-8 mb-4">
         <h3>Send us a Message</h3>
-        <form name="sentMessage" id="contactForm" novalidate>
+        <form method="post" name="sentMessage" id="contactForm" novalidate action="mailto:rishinathrbc123@gmail.com">
           <div class="control-group form-group">
             <div class="controls">
               <label>Full Name:</label>
@@ -157,7 +157,16 @@
           <button type="submit" class="btn btn-primary" id="sendMessageButton">Send Message</button>
         </form>
       </div>
-
+<form action="mailto:rishinathrbc123@gmail.com" method="post" enctype="text/plain">
+Name:<br>
+<input type="text" name="name"><br>
+E-mail:<br>
+<input type="text" name="mail"><br>
+Comment:<br>
+<input type="text" name="comment" size="50"><br><br>
+<input type="submit" value="Send">
+<input type="reset" value="Reset">
+</form>
     </div>
     <!-- /.row -->
 
